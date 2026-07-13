@@ -2,7 +2,7 @@
   "name": "plugins-compiler",
   "version": "1.0.0",
   "scripts": {
-    "build": "tsc rncalation.ts --outFile plugin.min.json --target es2020 --module amd"
+    "build": "tsc rncalation.ts --target es2020 --module commonjs && node build.js"
   },
   "dependencies": {
     "cheerio": "^1.2.0"
