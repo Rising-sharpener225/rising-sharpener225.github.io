@@ -16,26 +16,27 @@ export namespace Plugin {
 
   export interface PopularNovelsOptions<T> {
     showLatestNovels?: boolean;
+    filters?: T;
   }
 
   export interface NovelItem {
     name: string;
     path: string;
-    cover: string;
+    cover?: string;
   }
 
   export interface SourceNovel {
     path: string;
     name: string;
-    cover: string;
-    summary: string;
+    cover?: string;
+    summary?: string;
     chapters?: ChapterItem[];
   }
 
   export interface ChapterItem {
     name: string;
     path: string;
-    releaseTime: string;
-    chapterNumber: number;
+    releaseTime?: string;
+    chapterNumber?: number;
   }
 }
